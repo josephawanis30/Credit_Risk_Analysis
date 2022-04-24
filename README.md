@@ -10,24 +10,34 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 ## Results: Six Models outputs.
 
-* The naive random oversampling algorithm resulte in a balanced accuracy score of 0.657. The precision score was 1.0 for predicting low risk, also extremely low for predicting high risk (0.01). 
+* The naive random oversampling algorithm result in a balanced accuracy score of 0.657. The precision score was 1.0 for predicting low risk, also extremely low for predicting high risk (0.01). 
 
 ![image](https://user-images.githubusercontent.com/94503395/164951210-78adf743-dcf9-4ee9-8b69-2fdee401be53.png)
 ![image](https://user-images.githubusercontent.com/94503395/164951409-fdd87f7a-48be-4db3-b13a-0400ec7f30e9.png)
 
-* The SMOTE algorithm resulte in a balanced accuracy score of 0.662. The precision for predicting high and low risk was 
+* The SMOTE algorithm result in a balanced accuracy score of 0.662. The precision for predicting high and low risk was 
 the same as the naive random oversampling algorithm. The recall scores were 0.63 and 0.69 for high and low risk.
 
 ![image](https://user-images.githubusercontent.com/94503395/164951461-4e5ef126-a2c2-45c0-b295-cd259673a197.png)
 ![image](https://user-images.githubusercontent.com/94503395/164951473-b86f1542-4e15-454a-8c5a-3a1173bd90f1.png)
 
-* The Cluster Centroids algorithm resulte in a resulted in a balanced accuracy score of 0.66. 
+* The Cluster Centroids algorithm result in a resulted in a balanced accuracy score of 0.66. 
 
 ![image](https://user-images.githubusercontent.com/94503395/164951965-bf9b1e9e-3da6-4fbc-bda1-018c8561fc16.png)
 
-* The SMOTEENN algorithm resulte in a balanced accuracy score of 0.687. The precision for predicting high and low risk was the same as all the previous algorithms. The recall scores is 0.80 and 0.57 for high and low risk.
+* The SMOTEENN algorithm result in a balanced accuracy score of 0.687. The precision for predicting high and low risk was the same as all the previous algorithms. The recall scores is 0.80 and 0.57 for high and low risk.
 
 ![image](https://user-images.githubusercontent.com/94503395/164952048-c5e4cdff-5680-4420-a45d-0da5b28a5d5c.png)
 
+* The Balanced Random Forest Classifier result in a resulted in a balanced accuracy score of 0.788.
 
-## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+![image](https://user-images.githubusercontent.com/94503395/164952178-33b97fd6-e9dc-4d61-a33f-d9678d772d86.png)
+
+* The Easy Ensemble Classifier result in balanced accuracy score of 0.93. The precision and recall scores for predicting high and low risk were the same as the Balanced Random Forest Classifier.
+
+![image](https://user-images.githubusercontent.com/94503395/164952295-d0101bcb-8b04-4527-9818-8a7c768ddb3c.png)
+![image](https://user-images.githubusercontent.com/94503395/164952319-e25d0cd8-9474-411a-9973-82d3976b240b.png)
+
+
+## Summary: 
+In conclusion credit risk is a very difficult formula to predict, I would recommend to use the Easy Ensemble Classsifer because it had the highest balanced accuracy score of 0.93, although the company should be aware of the implications of the precision scores. The precision score of 0.09 means that a high risk classification is not very reliable.  I would advise not to use these algorithms, because it would put creditors at a too reat of a risk being unable to accurately predict the hig-risk clients.
