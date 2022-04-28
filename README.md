@@ -21,9 +21,9 @@ the same as the naive random oversampling algorithm. The recall scores were 0.63
 ![image](https://user-images.githubusercontent.com/94503395/164951461-4e5ef126-a2c2-45c0-b295-cd259673a197.png)
 ![image](https://user-images.githubusercontent.com/94503395/164951473-b86f1542-4e15-454a-8c5a-3a1173bd90f1.png)
 
-* The Cluster Centroids algorithm result in a resulted in a balanced accuracy score of 0.66. 
+* The Cluster Centroids algorithm result in a resulted in a balanced accuracy score of 0.544. 
 
-![image](https://user-images.githubusercontent.com/94503395/164951965-bf9b1e9e-3da6-4fbc-bda1-018c8561fc16.png)
+![image](https://user-images.githubusercontent.com/94503395/165651447-c3aad448-3e9d-4a94-9949-4c0df008e8ab.png)
 
 * The SMOTEENN algorithm result in a balanced accuracy score of 0.687. The precision for predicting high and low risk was the same as all the previous algorithms. The recall scores is 0.80 and 0.57 for high and low risk.
 
